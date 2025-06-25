@@ -23,7 +23,7 @@ export default function CustomGallery() {
             <Item key={i} original={src} thumbnail={src} width={width} height={height}>
               {({ ref, open }) => (
                 <div
-                  ref={ref as React.RefObject<HTMLDivElement>}
+                  ref={ref}
                   onClick={open}
                   className="relative w-full h-48 sm:h-60 md:h-72 overflow-hidden rounded-xl cursor-pointer"
                 >
