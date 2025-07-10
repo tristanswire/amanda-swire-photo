@@ -3,7 +3,7 @@ export default function Contact() {
     <section className="py-12 px-6 pb-0 text-center bg-white">
       <h2 className="text-4xl font-bold mb-6">Ready to Book?</h2>
       <p className="mb-6 text-sm sm:text-base">
-        Let’s capture your beautiful moments. Reach out today to schedule your session.
+        Let's capture your beautiful moments. Reach out today to schedule your session.
       </p>
       <a
         href="mailto:hello@amandaswire.com"

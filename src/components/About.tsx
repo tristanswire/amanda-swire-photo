@@ -5,7 +5,7 @@ export default function About() {
     <section className="py-20  pb-26 px-4 text-center bg-white">
       <h2 className="text-4xl font-bold mb-4">About</h2>
       <p className="max-w-3xl mx-auto text-lg text-gray-700 pb-16">
-        I'm Amanda, a lifestyle photographer capturing soft, natural, and heartfelt images. Whether it's a newborn yawn or a couple’s sunset embrace, I aim to preserve the warmth and light of your most meaningful moments.
+        I'm Amanda, a lifestyle photographer capturing soft, natural, and heartfelt images. Whether it's a newborn yawn or a couple's sunset embrace, I aim to preserve the warmth and light of your most meaningful moments.
       </p>
 
       <div className="flex justify-center gap-4 flex-wrap">
