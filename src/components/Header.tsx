@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header
-      className="relative h-[70vh] min-h-[400px] text-center text-white flex items-center justify-center bg-cover bg-top"
+      className="relative h-70vh md:h-[20vh] md:h-[50vh] 2xl:h-[70vh] min-h-[400px] text-center text-white flex items-center justify-center bg-cover bg-top"
       style={{ backgroundImage: "url('/images/header-bg.jpg')", backgroundPosition: "50% 40%" }}
     >
       <div className="bg-black/40 absolute inset-0" /> {/* dark overlay */}

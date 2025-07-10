@@ -23,7 +23,7 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section className="py-24 pb-18 px-6 text-center">
+    <section className="py-12 lg:py-24 px-6 text-center">
       <h2 className="text-4xl font-bold mb-10">Pricing</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {packages.map(({ title, price, description, image }) => (

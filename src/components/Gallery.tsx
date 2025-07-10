@@ -18,17 +18,17 @@ export default function CustomGallery() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-12 lg:py-24 px-6 bg-white">
       <h2 className="text-4xl font-bold mb-8">Captured Moments</h2>
       <Gallery>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
           {images.map(({ src, width, height }, i) => (
             <Item key={i} original={src} thumbnail={src} width={width} height={height}>
               {({ ref, open }) => (
                 <div
                   ref={ref}
                   onClick={open}
-                  className="relative w-full h-48 sm:h-60 md:h-100 overflow-hidden rounded-xl cursor-pointer"
+                  className="relative w-full h-100 sm:h-70 lg:h-100 overflow-hidden rounded-xl cursor-pointer"
                 >
                   <Image
                     src={src}

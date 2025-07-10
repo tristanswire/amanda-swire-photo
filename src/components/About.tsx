@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section className="py-20  pb-26 px-4 text-center bg-white">
+    <section className="py-10 pb-14 xl:py-20 xl:pb-26 px-4 text-center bg-white">
       <h2 className="text-4xl font-bold mb-4">About</h2>
-      <p className="max-w-3xl mx-auto text-lg text-gray-700 pb-16">
+      <p className="max-w-lg lg:max-w-2xl mx-auto text-lg text-gray-700 pb-16">
         I&apos;m Amanda, a lifestyle photographer capturing soft, natural, and heartfelt images. Whether it&apos;s a newborn yawn or a couple&apos;s sunset embrace, I aim to preserve the warmth and light of your most meaningful moments.
       </p>
 
