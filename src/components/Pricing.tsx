@@ -23,12 +23,12 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section className="py-16 px-6 bg-white text-center">
-      <h2 className="text-2xl font-bold mb-10">Pricing</h2>
+    <section className="py-24 pb-18 px-6 text-center">
+      <h2 className="text-4xl font-bold mb-10">Pricing</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {packages.map(({ title, price, description, image }) => (
-          <div key={title} className="bg-[#faf1eb] rounded-xl shadow hover:shadow-md transition p-4">
-            <div className="relative w-full h-74 rounded-lg overflow-hidden mb-4">
+          <div key={title} className="bg-white rounded-xl hover:shadow-md transition p-4">
+            <div className="relative w-full h-84 rounded-lg overflow-hidden mb-4">
               <Image src={image} alt={title} fill className="object-cover" />
             </div>
             <h3 className="text-2xl font-semibold">{title}</h3>
@@ -41,7 +41,7 @@ export default function Pricing() {
           </div>
         ))}
       </div>
-      <p className="mt-8 text-sm text-gray-500 italic">
+      <p className="mt-4 text-sm text-gray-500 italic">
         Travel fees may apply for locations outside the metro area.
       </p>
     </section>

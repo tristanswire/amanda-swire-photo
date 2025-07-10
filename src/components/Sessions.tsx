@@ -20,8 +20,8 @@ const sessions = [
 
 export default function Sessions() {
   return (
-    <section className="py-20 pb-26 px-6 bg-white">
-      <h2 className="text-2xl font-bold mb-8">Sessions</h2>
+    <section className="py-24 px-6 pb-12">
+      <h2 className="text-4xl font-bold mb-8">Sessions</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
         {sessions.map(({ icon: Icon, title, description }) => (
           <div key={title} className="p-10 bg-[#fef9f6] rounded-xl shadow hover:shadow-lg transition text-center">
@@ -31,6 +31,12 @@ export default function Sessions() {
           </div>
         ))}
       </div>
+      <a
+        href="mailto:hello@amandaswire.com"
+        className="inline-block bg-[#d0ab96] text-lg text-white mt-20 px-10 py-4 rounded-full hover:opacity-90 transition mb-6"
+      >
+        Book a Session!
+      </a>
     </section>
   );
 }
