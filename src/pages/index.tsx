@@ -2,7 +2,6 @@
 import Head from 'next/head';
 import Header from '@/components/Header';
 import About from '@/components/About';
-import Sessions from '@/components/Sessions';
 import Gallery from '@/components/Gallery';
 import Pricing from '@/components/Pricing';
 import Testimonial from '@/components/Testimonial';
