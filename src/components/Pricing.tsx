@@ -42,7 +42,7 @@ export default function Pricing() {
         ))}
       </div>
       <p className="mt-3 mb-10 text-sm text-gray-500 italic">
-        Travel fees may apply for locations outside the metro area.
+        Travel fees may apply for locations outside the DFW area.
       </p>
     </section>
   );
