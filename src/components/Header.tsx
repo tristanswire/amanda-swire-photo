@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header
-      className="relative h-[100vh] sm:h-[70vh] text-center text-white flex items-center justify-center bg-cover bg-no-repeat bg-top"
+      className="relative h-[70vh] sm:h-[70vh] text-center text-white flex items-center justify-center bg-cover bg-no-repeat bg-top"
       style={{
         backgroundImage: `
           linear-gradient(to bottom, 
