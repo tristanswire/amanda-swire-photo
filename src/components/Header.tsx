@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header
-      className="relative h-70vh md:h-[20vh] md:h-[50vh] 2xl:h-[70vh] min-h-[400px] text-center text-white flex items-center justify-center bg-cover bg-no-repeat bg-top"
+      className="relative h-[100vh] sm:h-[50vh] 2xl:h-[70vh] text-center text-white flex items-center justify-center bg-cover bg-no-repeat bg-top"
       style={{
         backgroundImage: `
           linear-gradient(to bottom, 
@@ -13,7 +13,7 @@ export default function Header() {
       }}
     >
       <div className="relative z-10 px-4">
-        <h1 className="text-4xl sm:text-5xl font-semibold drop-shadow-md">Amanda Swire Photography</h1>
+        <h1 className="text-3xl md:text-5xl font-semibold drop-shadow-md">Amanda Swire Photography</h1>
         <p className="italic mt-4 mb-6 text-lg sm:text-xl drop-shadow">Light. Love. Moments that last.</p>
        <a
           href="https://www.instagram.com/amandaswire_photography"
