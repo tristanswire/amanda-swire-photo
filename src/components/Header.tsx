@@ -4,12 +4,14 @@ export default function Header() {
       className="relative h-70vh md:h-[20vh] md:h-[50vh] 2xl:h-[70vh] min-h-[400px] text-center text-white flex items-center justify-center bg-cover bg-no-repeat bg-top"
       style={{
         backgroundImage: `
-          linear-gradient(to bottom, rgba(208, 171, 150, 0.7), rgba(54, 65, 83, 0.2)),
+          linear-gradient(to bottom, 
+        rgba(208, 171, 150, 0.5) 0%, 
+        rgba(208, 171, 150, 0.5) 25%, 
+        rgba(54, 65, 83, 0.5) 70%),
           url('/images/header-bg.jpg')
         `
       }}
     >
-      <div className="bg-black/40 absolute inset-0" /> {/* dark overlay */}
       <div className="relative z-10 px-4">
         <h1 className="text-4xl sm:text-5xl font-semibold drop-shadow-md">Amanda Swire Photography</h1>
         <p className="italic mt-4 mb-6 text-lg sm:text-xl drop-shadow">Light. Love. Moments that last.</p>
