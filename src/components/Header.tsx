@@ -1,13 +1,13 @@
 export default function Header() {
   return (
     <header
-      className="relative h-70vh md:h-[20vh] md:h-[50vh] 2xl:h-[50vh] min-h-[400px] text-center text-white flex items-center justify-center bg-cover bg-top"
-       style={{
-      backgroundImage: `
-        linear-gradient(to bottom, rgba(208, 171, 150, 0.55), rgba(208, 171, 150, 0.25)),
-        url('/images/header-bg.jpg')
-      `
-    }}
+      className="relative h-70vh md:h-[20vh] md:h-[50vh] 2xl:h-[70vh] min-h-[400px] text-center text-white flex items-center justify-center bg-cover bg-no-repeat bg-top"
+      style={{
+        backgroundImage: `
+          linear-gradient(to bottom, rgba(208, 171, 150, 0.7), rgba(54, 65, 83, 0.2)),
+          url('/images/header-bg.jpg')
+        `
+      }}
     >
       <div className="bg-black/40 absolute inset-0" /> {/* dark overlay */}
       <div className="relative z-10 px-4">
