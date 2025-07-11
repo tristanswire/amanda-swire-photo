@@ -13,7 +13,32 @@ export default function Home() {
     <>
       <Head>
         <title>Amanda Swire Photography</title>
-        <meta name="description" content="Light. Love. Moments that last." />
+        <meta name="description" content="Heartfelt lifestyle photography for families, couples, newborns, and individuals." />
+        <link rel="canonical" href="https://amandaswire.com/" />
+        <meta property="og:image" content="/images/amanda-1.jpg" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Amanda Swire Photography",
+              "url": "https://amandaswire.com",
+              "image": "https://amandaswire.com/images/amanda-1.jpg",
+              "description": "Lifestyle photographer capturing newborn, family, and engagement sessions.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dallas Fort Worth",
+                "addressRegion": "TX",
+                "addressCountry": "US"
+              },
+              "sameAs": [
+                "https://instagram.com/amandaswire",
+                "https://facebook.com/amandaswire"
+              ]
+            })
+          }}
+        />
       </Head>
       <main className="font-serif text-center text-gray-700 bg-[#f3e8e2] min-h-screen">
         <Header />

@@ -4,20 +4,23 @@ const packages = [
   {
     title: 'Mini Session',
     price: '$150',
-    description: ['Up to 30 Minutes', '15 Edited Photos', 'Basic Retouching', 'Print Release Included',  'Access to Online Gallery'],
+    description: ['Up to 30 Minutes', '15 Edited Photos', 'Basic Retouching'],
     image: '/images/pricing-1.jpg',
+    alt: 'a female author blowing confetti in to the air'
   },
   {
     title: 'Full Session',
     price: '$250',
-    description: ['Up to 60 Minutes', '25 Edited Photos', 'Advanced Retouching', 'Print Release Included', 'Access to Online Gallery'],
+    description: ['Up to 60 Minutes', '25 Edited Photos', 'Advanced Retouching'],
     image: '/images/pricing-2.jpg',
+    alt: 'black and white photo of a family of 6 laying on the sitting smiling together'
   },
   {
     title: 'Newborn Session',
     price: '$300',
-    description: ['Up to 90 Minutes', '30 Edited Photos', 'Advanced Retouching', 'Print Release Included', 'Access to Online Gallery', 'At Home or Studio'],
+    description: ['Up to 90 Minutes', '30 Edited Photos', 'Advanced Retouching', 'At Home or Studio'],
     image: '/images/pricing-3.jpg',
+    alt: 'a beautiful newborn boy laying on his fathers forearm'
   },
 ];
 
