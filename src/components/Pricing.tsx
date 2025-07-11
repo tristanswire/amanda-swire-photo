@@ -10,7 +10,7 @@ const packages = [
   {
     title: 'Full Session',
     price: '$250',
-    description: ['Up to 60 Minutes', '30 Edited Photos', 'Advanced Retouching', 'Print Release Included', 'Access to Online Gallery'],
+    description: ['Up to 60 Minutes', '25 Edited Photos', 'Advanced Retouching', 'Print Release Included', 'Access to Online Gallery'],
     image: '/images/pricing-2.jpg',
   },
   {
@@ -23,7 +23,7 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section className="py-12 lg:py-24 px-6 text-center">
+    <section className="py-12 lg:py-24 lg:pb-4 px-6 text-center">
       <h2 className="text-4xl font-bold mb-10">Pricing</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {packages.map(({ title, price, description, image }) => (
@@ -41,7 +41,7 @@ export default function Pricing() {
           </div>
         ))}
       </div>
-      <p className="mt-4 text-sm text-gray-500 italic">
+      <p className="mt-3 mb-10 text-sm text-gray-500 italic">
         Travel fees may apply for locations outside the metro area.
       </p>
     </section>

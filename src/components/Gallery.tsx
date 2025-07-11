@@ -6,15 +6,15 @@ import 'photoswipe/dist/photoswipe.css';
 
 export default function CustomGallery() {
   const images = [
-    { src: '/images/gallery-1.jpg', width: 874, height: 578 },
-    { src: '/images/gallery-2.jpg', width: 878, height: 585 },
-    { src: '/images/gallery-3.jpg', width: 867, height: 579 },
-    { src: '/images/gallery-4.jpg', width: 1313, height: 1750 },
-    { src: '/images/gallery-5.jpg', width: 1365, height: 1820 },
-    { src: '/images/gallery-6.jpg', width: 998, height: 1247 },
-    { src: '/images/gallery-7.jpg', width: 997, height: 1246 },
-    { src: '/images/gallery-8.jpg', width: 997, height: 1221 },
-    { src: '/images/gallery-9.jpg', width: 997, height: 1246 },
+    { src: '/images/gallery-1.jpg', width: 1320, height: 1760 },
+    { src: '/images/gallery-2.jpg', width: 1365, height: 2048 },
+    { src: '/images/gallery-3.jpg', width: 1320, height: 1649 },
+    { src: '/images/gallery-4.jpg', width: 878, height: 584 },
+    { src: '/images/gallery-5.jpg', width: 1313, height: 1750 },
+    { src: '/images/gallery-6.jpg', width: 1320, height: 1760 },
+    { src: '/images/gallery-7.jpg', width: 1365, height: 2048 },
+    { src: '/images/gallery-8.jpg', width: 1320, height: 1760 },
+    { src: '/images/gallery-9.jpg', width: 867, height: 579 },
   ];
 
   return (
