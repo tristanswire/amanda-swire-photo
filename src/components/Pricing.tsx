@@ -26,17 +26,17 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section className="py-12 lg:py-24 lg:pb-4 px-6 text-center">
-      <h2 className="text-4xl font-bold mb-10">Pricing</h2>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+    <section className="py-12 lg:py-24 lg:pb-4 px-6 text-center bg-brand-black">
+      <h2 className="text-5xl text-brand-white font-bold mb-10">Pricing</h2>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto text-left">
         {packages.map(({ title, price, description, image }) => (
-          <div key={title} className="bg-white rounded-xl hover:shadow-md transition p-4">
+          <div key={title} className="bg-white rounded-xl hover:shadow-md transition p-6">
             <div className="relative w-full h-100 rounded-lg overflow-hidden mb-4">
               <Image src={image} alt={title} fill className="object-cover" />
             </div>
-            <h3 className="text-2xl font-semibold">{title}</h3>
-            <p className="text-5xl font-bold text-[#d0ab96] mt-2 pb-4">{price}</p>
-            <ul className="mt-2 text-md text-gray-600 space-y-1">
+            <h3 className="text-lg font-semibold">{title}</h3>
+            <p className="text-5xl font-bold text-brand-black mt-2 pb-2">{price}</p>
+            <ul className="mt-2 text-md text-gray-600 space-y-1 pb-10 pl-3">
               { description.map((item, i) => (
                 <li key={i}>• {item}</li>
               )) }
@@ -44,7 +44,7 @@ export default function Pricing() {
           </div>
         ))}
       </div>
-      <p className="mt-3 mb-10 text-sm text-gray-500 italic">
+      <p className="mt-3 mb-10 text-sm text-brand-whiteitalic">
         Travel fees may apply for locations outside the DFW area.
       </p>
     </section>
