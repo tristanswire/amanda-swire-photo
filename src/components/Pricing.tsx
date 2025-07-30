@@ -26,7 +26,7 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section className="py-12 lg:py-24 lg:pb-16 px-6 text-center">
+    <section className="py-12 lg:py-24 lg:pb-24 px-6 text-center">
       <h2 className="text-8xl mb-16 font-antro text-brand-black">Pricing</h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto text-left">
         {packages.map(({ title, price, description, image }) => (
@@ -50,7 +50,7 @@ export default function Pricing() {
       <a
         href="https://www.instagram.com/amandaswire_photography"
         target="_blank"
-        className="inline-block mt-4 bg-brand-black text-brand-white px-12 py-4 text-xl rounded-lg hover:opacity-90 transition"
+        className="inline-block mt-4 bg-brand-black text-brand-white px-12 py-4 text-xl rounded-lg hover:opacity-90 transition font-body"
       >
         Book a Session
       </a>

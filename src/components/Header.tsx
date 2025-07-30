@@ -75,13 +75,13 @@ export default function Header() {
 
       {/* Hero Section */}
       <div
-        className="relative h-[70vh] sm:h-[70vh] text-center text-white flex items-center justify-center bg-cover bg-center"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1705326701287-346fc37a2c86?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
+        className="relative h-[50vh] sm:h-[50vh] text-center text-white flex items-center justify-center bg-cover bg-top"
+         style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1520869309377-88c9274a27c2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-[rgba(26,29,26,0.5)] z-0" />
+        <div className="absolute inset-0 bg-brand-black opacity-100 z-0" />
 
         <div className="relative z-10 px-4 mx-auto">
           <h1 className="text-3xl md:text-8xl/22 drop-shadow-md font-antro">
@@ -93,9 +93,9 @@ export default function Header() {
           <a
             href="https://www.instagram.com/amandaswire_photography"
             target="_blank"
-            className="button inline-block bg-brand-black text-xl text-white px-10 py-4 rounded-lg hover:opacity-90 transition mb-6 font-body"
+            className="button inline-block bg-brand-white text-xl text-brand-black px-10 py-4 rounded-lg hover:opacity-90 transition font-body"
           >
-            Book your Session
+            Book a Session
           </a>
         </div>
       </div>
