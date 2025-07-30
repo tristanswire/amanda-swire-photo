@@ -41,7 +41,7 @@ export default function Pricing() {
       </motion.h2>
 
       <motion.div
-        className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto text-left"
+        className="grid gap-6 lg:grid-cols-3 max-w-7xl mx-auto text-left"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -55,7 +55,7 @@ export default function Pricing() {
         {packages.map(({ title, price, description, image, alt }) => (
           <motion.div
             key={title}
-            className="bg-brand-tan/10 text-brand-black rounded-xl hover:shadow-md transition p-6"
+            className="w-[90%] max-w-[40rem] lg:w-[100%] mx-auto bg-brand-tan/10 text-brand-black rounded-xl hover:shadow-md transition p-6"
             variants={{
               hidden: { opacity: 0, y: 40 },
               visible: { opacity: 1, y: 0 },
@@ -64,18 +64,28 @@ export default function Pricing() {
           >
             <motion.div
               className="relative w-full h-100 rounded-lg overflow-hidden mb-4"
-              whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
               <Image src={image} alt={alt} fill className="object-cover" />
             </motion.div>
             <h3 className="text-lg font-body">{title}</h3>
             <p className="text-6xl font-bold pb-2 mb-6">{price}</p>
-            <ul className="mt-2 text-lg space-y-1 pb-10 pl-3 font-body">
+            <ul className="mt-2 text-lg space-y-1 pb-4 pl-3 font-body">
               {description.map((item, i) => (
                 <li key={i}>• {item}</li>
               ))}
             </ul>
+            <motion.a
+              href="https://www.instagram.com/amandaswire_photography"
+              target="_blank"
+              className="block lg:hidden my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-2xl text-xl rounded-lg hover:bg-brand-white hover:text-brand-tan hover:border-2 hover:border-brand-tan transition duration-500"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              Book a Session
+            </motion.a>
           </motion.div>
         ))}
       </motion.div>
@@ -93,7 +103,7 @@ export default function Pricing() {
       <motion.a
         href="https://www.instagram.com/amandaswire_photography"
         target="_blank"
-        className="inline-block mt-4 bg-brand-tan text-brand-white px-12 py-4 text-xl rounded-lg hover:bg-brand-white hover:text-brand-tan hover:border-2 hover:border-brand-tan transition duration-500"
+        className="hidden lg:block my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-sm mx-auto text-xl rounded-lg hover:bg-brand-white hover:text-brand-tan hover:border-2 hover:border-brand-tan transition duration-500"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}

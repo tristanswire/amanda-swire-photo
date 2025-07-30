@@ -61,7 +61,7 @@ export default function Home() {
             href="https://www.instagram.com/amandaswire_photography"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand-black hover:text-[#CBC0AD] transition"
+            className="text-brand-tan hover:text-brand-tan-dark duration-350 transition"
             aria-label="Instagram"
           >
             <FaInstagram size={30} />
@@ -70,7 +70,7 @@ export default function Home() {
             href="https://www.facebook.com/amanda.erickson.108889"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand-black hover:text-[#CBC0AD] transition"
+            className="text-brand-tan hover:text-brand-tan-dark duration-350 transition"
             aria-label="Facebook"
           >
             <FaFacebook size={30} />

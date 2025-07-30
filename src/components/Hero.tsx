@@ -82,7 +82,7 @@ export default function Hero() {
 
       {/* Hero Section */}
       <div
-        className="relative h-[60vh] sm:h-[60vh] text-center text-white flex items-center justify-center bg-cover bg-top pt-10"
+        className="relative h-[45vh] sm:h-[60vh] text-center text-white flex items-center justify-center bg-cover bg-top pt-10"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1520869309377-88c9274a27c2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
         }}
@@ -95,7 +95,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="text-6xl md:text-8xl/22 drop-shadow-md font-antro"
+            className="text-7xl md:text-8xl/22 drop-shadow-md font-antro"
           >
             Moments made Timeless.
           </motion.h1>
@@ -104,7 +104,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-            className="mb-6 text-md drop-shadow font-body mt-[-0.5rem] mb-10"
+            className="italic mb-6 text-lg drop-shadow font-body mt-[-0.5rem] mb-10"
           >
             Because memories fade — but photos last forever.
           </motion.p>
@@ -115,7 +115,7 @@ export default function Hero() {
             transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
             href="https://www.instagram.com/amandaswire_photography"
             target="_blank"
-            className="inline-block text-xl bg-brand-white text-brand-tan-dark px-10 py-4 rounded-lg hover:opacity-90 transition font-body duration-500 hover:bg-brand-tan-dark hover:text-brand-white"
+            className="inline-block text-lg md:text-xl bg-brand-white text-brand-tan-dark px-8 py-4 md:px-10 rounded-md hover:opacity-90 transition font-body duration-500 hover:bg-brand-tan-dark hover:text-brand-white"
           >
             Book a Session
           </motion.a>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section id="about" className="py-10 pb-14 xl:py-20 xl:pb-26 px-4 text-center bg-white overflow-hidden">
+    <section id="about" className="py-20 xl:pb-26 px-4 text-center bg-white overflow-hidden">
       <motion.h2
         className="text-6xl md:text-7xl mb-4 font-antro"
         initial={{ opacity: 0, y: 20 }}

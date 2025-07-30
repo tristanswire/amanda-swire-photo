@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function Testimonial() {
   return (
-    <section id="testimonials" className="font-body py-20 xl:py-24 px-6 text-center bg-brand-tan text-brand-white font-semibold overflow-hidden">
+    <section id="testimonials" className="font-body py-14 xl:py-24 px-10 text-center bg-brand-tan text-brand-white font-semibold overflow-hidden">
       <motion.blockquote
         className="max-w-4xl mx-auto text-2xl xl:text-3xl italic font-normal leading-relaxed"
         initial={{ opacity: 0, y: 30 }}
