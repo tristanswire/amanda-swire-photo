@@ -18,8 +18,8 @@ export default function CustomGallery() {
   ];
 
   return (
-    <section className="py-12 lg:py-24 px-6 bg-white">
-      <h2 className="text-4xl font-bold mb-8">Captured Moments</h2>
+    <section className="py-12 px-6 lg:py-24 lg:pb-0">
+      <h2 className="text-8xl mb-16 font-antro">Gallery</h2>
       <Gallery>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
           {images.map(({ src, width, height }, i) => (

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { XIcon, MenuIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function Header() {
         <div className="relative max-w-8xl mx-auto flex items-center justify-center px-6">
 
           {/* Logo - left */}
-          <a href="/" className="text-2xl font-antro-bold">AS</a>
+          <Link href="/" className="text-2xl font-antro-bold">AS</Link>
 
           {/* Center navigation */}
           <ul className="hidden md:flex gap-10 text-lg tracking-wide mx-auto pl-24">
@@ -74,7 +75,7 @@ export default function Header() {
 
       {/* Hero Section */}
       <div
-        className="relative h-[60vh] sm:h-[60vh] text-center text-white flex items-center justify-center bg-cover bg-center"
+        className="relative h-[70vh] sm:h-[70vh] text-center text-white flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1705326701287-346fc37a2c86?q=80&w=1044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
         }}
@@ -83,18 +84,18 @@ export default function Header() {
         <div className="absolute inset-0 bg-[rgba(26,29,26,0.5)] z-0" />
 
         <div className="relative z-10 px-4 mx-auto">
-          <h1 className="text-3xl md:text-8xl/22 drop-shadow-md max-w-3xl font-antro">
-            Preserving moments that matter most.
+          <h1 className="text-3xl md:text-8xl/22 drop-shadow-md font-antro">
+            Moments made Timeless.
           </h1>
-          <p className="mb-6 text-md drop-shadow font-body mt-[-1rem] mb-10">
-            For the moments you never want to forget.
+          <p className="mb-6 text-md drop-shadow font-body mt-[-0.5rem] mb-10">
+            Because memories fade — but photos last forever.
           </p>
           <a
             href="https://www.instagram.com/amandaswire_photography"
             target="_blank"
             className="button inline-block bg-brand-black text-xl text-white px-10 py-4 rounded-lg hover:opacity-90 transition mb-6 font-body"
           >
-            Book a Session
+            Book your Session
           </a>
         </div>
       </div>

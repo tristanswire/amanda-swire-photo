@@ -5,7 +5,6 @@ import About from '@/components/About';
 import Gallery from '@/components/Gallery';
 import Pricing from '@/components/Pricing';
 import Testimonial from '@/components/Testimonial';
-import Contact from '@/components/Contact';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Home() {
@@ -40,13 +39,12 @@ export default function Home() {
           }}
         />
       </Head>
-      <main className="font-serif text-center text-gray-700 bg-[#f3e8e2] min-h-screen">
+      <main className="font-serif text-center text-gray-700 bg-brand-white min-h-screen">
         <Header />
         <About />
         <Testimonial />
         <Gallery />
         <Pricing />
-        <Contact />
       </main>
       <footer className="py-8 text-sm text-brand-black text-center">
 
