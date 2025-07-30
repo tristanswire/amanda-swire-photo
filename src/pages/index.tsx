@@ -6,6 +6,7 @@ import Gallery from '@/components/Gallery';
 import Pricing from '@/components/Pricing';
 import Testimonial from '@/components/Testimonial';
 import Faq from '@/components/Faq';
+import { motion } from 'framer-motion';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Home() {
@@ -48,8 +49,13 @@ export default function Home() {
         <Pricing />
         <Faq />
       </main>
-      <footer className="py-8 text-sm text-brand-black text-center">
-
+      <motion.footer
+        className="py-8 text-sm text-brand-black text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <div className="flex justify-center gap-6 mb-4">
           <a
             href="https://www.instagram.com/amandaswire_photography"
@@ -71,7 +77,8 @@ export default function Home() {
           </a>
         </div>
         &copy; {new Date().getFullYear()} Amanda Swire Photography. All rights reserved.
-      </footer>
+      </motion.footer>
+    );
     </>
   );
 }

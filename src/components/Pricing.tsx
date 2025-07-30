@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const packages = [
   {
@@ -26,34 +29,78 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section className="py-12 lg:py-24 px-6 text-center">
-      <h2 className="text-8xl mb-16 font-antro text-brand-black">Pricing</h2>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto text-left">
-        {packages.map(({ title, price, description, image }) => (
-          <div key={title} className="bg-brand-black/65 text-brand-white rounded-xl hover:shadow-md transition p-6">
-            <div className="relative w-full h-100 rounded-lg overflow-hidden mb-4">
-              <Image src={image} alt={title} fill className="object-cover" />
-            </div>
-            <h3 className="text-lg font-semibold">{title}</h3>
-            <p className="text-5xl font-bold mt-2 pb-2">{price}</p>
-            <ul className="mt-2 text-md space-y-1 pb-10 pl-3">
-              { description.map((item, i) => (
+    <section className="py-12 lg:py-24 px-6 text-center bg-white overflow-hidden">
+      <motion.h2
+        className="text-6xl md:text-8xl mb-16 font-antro text-brand-black"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        Pricing
+      </motion.h2>
+
+      <motion.div
+        className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto text-left"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          visible: {
+            transition: { staggerChildren: 0.15 },
+          },
+        }}
+      >
+        {packages.map(({ title, price, description, image, alt }) => (
+          <motion.div
+            key={title}
+            className="bg-brand-black/65 text-brand-white rounded-xl hover:shadow-md transition p-6"
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          >
+            <motion.div
+              className="relative w-full h-100 rounded-lg overflow-hidden mb-4"
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Image src={image} alt={alt} fill className="object-cover" />
+            </motion.div>
+            <h3 className="text-lg font-body">{title}</h3>
+            <p className="text-6xl font-bold pb-2 mb-6">{price}</p>
+            <ul className="mt-2 text-lg space-y-1 pb-10 pl-3 font-body">
+              {description.map((item, i) => (
                 <li key={i}>• {item}</li>
-              )) }
+              ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
-      </div>
-      <p className="mt-3 mb-10 text-sm text-brand-white italic">
+      </motion.div>
+
+      <motion.p
+        className="mt-3 mb-10 text-sm text-brand-black italic"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.4, duration: 0.6 }}
+        viewport={{ once: true }}
+      >
         Travel fees may apply for locations outside the DFW area.
-      </p>
-      <a
+      </motion.p>
+
+      <motion.a
         href="https://www.instagram.com/amandaswire_photography"
         target="_blank"
         className="inline-block mt-4 bg-brand-black text-brand-white px-12 py-4 text-xl rounded-lg hover:opacity-90 transition"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.6 }}
+        viewport={{ once: true }}
       >
         Book a Session
-      </a>
+      </motion.a>
     </section>
   );
 }

@@ -9,9 +9,9 @@
 
 @theme inline {
   /* Brand Colors */
-  --color-brand-black: #6E6A6F;
+  --color-brand-black: #1A1D1A;
   --color-brand-white: #FBF9FF;
-  --color-brand-blush: #BFAFA6;
+  --color-brand-blush: #9F9AA4;
 
   /* Font Variables (from next/font) */
   --font-body: var(--font-karla);
