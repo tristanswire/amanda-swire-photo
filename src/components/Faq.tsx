@@ -5,25 +5,33 @@ import { motion } from "framer-motion";
 export default function Faq() {
   const faqs = [
     {
-      q: "What types of requests can I submit?",
-      a: "You can request landing pages, backend systems, integrations, WordPress development, and more."
+      q: "What if I need help choosing a color scheme for my photos?",
+      a: "Answer Goes Here"
     },
     {
-      q: "Do you work with custom code?",
-      a: "Yes — we handle custom WordPress themes, plugins, and API integrations."
+      q: "Is there a curated closet I can pick outfits from?",
+      a: "Answer Goes Here"
     },
     {
-      q: "How fast is delivery?",
-      a: "Work is delivered in biweekly sprint cycles with prioritized tasks each cycle."
+      q: "Are my pets allowed to be in my photos?",
+      a: "Answer Goes Here"
     },
     {
-      q: "Is design included?",
-      a: "No — this is development-only. You can bring your designs or we can coordinate with trusted designers."
+      q: "What about live events or engagements?",
+      a: "Answer Goes Here"
+    },
+    {
+      q: "How far are you willing to travel?",
+      a: "Answer Goes Here"
+    },
+    {
+      q: "Do you have a package that includes color and black/white photos?",
+      a: "Answer Goes Here"
     }
   ];
 
   return (
-    <section id="faq" className="bg-brand-black py-30 px-6">
+    <section id="faq" className="bg-brand-tan text-brand-black py-30 px-6">
       <motion.h2
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -58,10 +66,10 @@ export default function Faq() {
             }}
             transition={{ duration: 0.4 }}
           >
-            <summary className="font-sans cursor-pointer text-sm mb-1 text-brand-white">
+            <summary className="font-sans cursor-pointer ml-2 text-lg mb-1 text-brand-white">
               {q}
             </summary>
-            <p className="font-sans text-sm mt-1 text-brand-white">{a}</p>
+            <p className="font-sans text-md mt-1 text-brand-white pl-6 pt-2">{a}</p>
           </motion.details>
         ))}
       </motion.div>

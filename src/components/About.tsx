@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <section className="py-10 pb-14 xl:py-20 xl:pb-26 px-4 text-center bg-white overflow-hidden">
+    <section id="about" className="py-10 pb-14 xl:py-20 xl:pb-26 px-4 text-center bg-white overflow-hidden">
       <motion.h2
-        className="text-6xl md:text-8xl mb-4 font-antro"
+        className="text-6xl md:text-7xl mb-4 font-antro"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -17,7 +17,7 @@ export default function About() {
       </motion.h2>
 
       <motion.p
-        className="max-w-lg lg:max-w-3xl mx-auto text-xl text-gray-700 pb-16 font-body"
+        className="max-w-lg lg:max-w-3xl mx-auto text-xl text-brand-black pb-16 font-body"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -36,7 +36,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 + index * 0.2 }}
             viewport={{ once: true }}
-            className="w-100 h-100 relative rounded-xl overflow-hidden bg-gray-100"
+            className="w-100 h-100 relative rounded-xl overflow-hidden"
           >
             <Image
               src={`/images/amanda-${num}.jpg`}

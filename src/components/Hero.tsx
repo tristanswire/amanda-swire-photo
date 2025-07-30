@@ -5,7 +5,7 @@ import { XIcon, MenuIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function Header() {
+export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -19,20 +19,21 @@ export default function Header() {
       >
         <div className="relative max-w-8xl mx-auto flex items-center justify-center px-6">
           <Link href="/" className="text-2xl font-antro-bold">AS</Link>
-          <ul className="hidden md:flex gap-10 text-lg tracking-wide mx-auto pl-24">
-            <li><a href="#how-it-works" className="hover:text-gray-600">About</a></li>
-            <li><a href="#membership" className="hover:text-gray-600">Testimonials</a></li>
-            <li><a href="#pricing" className="hover:text-gray-600">Gallery</a></li>
-            <li><a href="#addons" className="hover:text-gray-600">Pricing</a></li>
+          <ul className="hidden md:flex gap-10 text-lg tracking-wide mx-auto">
+            <li><a href="#about" className="hover:text-brand-tan-dark duration-350 transition-all">About</a></li>
+            <li><a href="#testimonials" className="hover:text-brand-tan-dark duration-350 transition-all">Testimonials</a></li>
+            <li><a href="#gallery" className="hover:text-brand-tan-dark duration-350 transition-all">Gallery</a></li>
+            <li><a href="#pricing" className="hover:text-brand-tan-dark duration-350 transition-all">Pricing</a></li>
+            <li><a href="#faq" className="hover:text-brand-tan-dark duration-350 transition-all">Questions</a></li>
           </ul>
           <div className="hidden md:flex items-center gap-4">
-            <a
+            {/* <a
               href="https://www.instagram.com/amandaswire_photography"
               target="_blank"
               className="button inline-block bg-brand-black text-brand-white text-md px-6 py-3 rounded-lg hover:opacity-90 transition font-body"
             >
               Book a Session
-            </a>
+            </a> */}
           </div>
           <button
             onClick={() => setIsOpen(true)}
@@ -81,13 +82,13 @@ export default function Header() {
 
       {/* Hero Section */}
       <div
-        className="relative h-[50vh] sm:h-[50vh] text-center text-white flex items-center justify-center bg-cover bg-top"
+        className="relative h-[60vh] sm:h-[60vh] text-center text-white flex items-center justify-center bg-cover bg-top pt-10"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1520869309377-88c9274a27c2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-brand-black opacity-100 z-0" />
+        <div className="absolute inset-0 bg-brand-tan opacity-100 z-0" />
 
         <div className="relative z-10 px-4 mx-auto">
           <motion.h1
@@ -114,7 +115,7 @@ export default function Header() {
             transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
             href="https://www.instagram.com/amandaswire_photography"
             target="_blank"
-            className="button inline-block bg-brand-white text-xl text-brand-black px-10 py-4 rounded-lg hover:opacity-90 transition font-body"
+            className="inline-block text-xl bg-brand-white text-brand-tan-dark px-10 py-4 rounded-lg hover:opacity-90 transition font-body duration-500 hover:bg-brand-tan-dark hover:text-brand-white"
           >
             Book a Session
           </motion.a>

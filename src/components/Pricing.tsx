@@ -6,22 +6,22 @@ import { motion } from 'framer-motion';
 const packages = [
   {
     title: 'Mini Session',
-    price: '$150',
-    description: ['Up to 30 Minutes', '15 Edited Photos', 'Basic Retouching'],
+    price: '$200',
+    description: ['Up to 30 Minutes', 'Minimum 15 Photos', 'Digital Download', 'Advanced Retouching'],
     image: '/images/pricing-1.jpg',
     alt: 'a female author blowing confetti in to the air'
   },
   {
     title: 'Full Session',
-    price: '$250',
-    description: ['Up to 60 Minutes', '25 Edited Photos', 'Advanced Retouching'],
+    price: '$300',
+    description: ['Up to 60 Minutes', 'Minimum 25 Photos', 'Digital Download', 'Advanced Retouching'],
     image: '/images/pricing-2.jpg',
     alt: 'black and white photo of a family of 6 laying on the sitting smiling together'
   },
   {
     title: 'Newborn Session',
-    price: '$300',
-    description: ['Up to 90 Minutes', '30 Edited Photos', 'Advanced Retouching', 'At Home or Studio'],
+    price: '$350',
+    description: ['Up to 90 Minutes', 'Minimum 30 Photos', 'Digital Download', 'Advanced Retouching'],
     image: '/images/pricing-3.jpg',
     alt: 'a beautiful newborn boy laying on his fathers forearm'
   },
@@ -29,7 +29,7 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section className="py-12 lg:py-24 px-6 text-center bg-white overflow-hidden">
+    <section id="pricing" className="py-12 lg:py-24 px-6 text-center bg-brand-white overflow-hidden">
       <motion.h2
         className="text-6xl md:text-8xl mb-16 font-antro text-brand-black"
         initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,7 @@ export default function Pricing() {
         {packages.map(({ title, price, description, image, alt }) => (
           <motion.div
             key={title}
-            className="bg-brand-black/65 text-brand-white rounded-xl hover:shadow-md transition p-6"
+            className="bg-brand-tan/10 text-brand-black rounded-xl hover:shadow-md transition p-6"
             variants={{
               hidden: { opacity: 0, y: 40 },
               visible: { opacity: 1, y: 0 },
@@ -93,7 +93,7 @@ export default function Pricing() {
       <motion.a
         href="https://www.instagram.com/amandaswire_photography"
         target="_blank"
-        className="inline-block mt-4 bg-brand-black text-brand-white px-12 py-4 text-xl rounded-lg hover:opacity-90 transition"
+        className="inline-block mt-4 bg-brand-tan text-brand-white px-12 py-4 text-xl rounded-lg hover:bg-brand-white hover:text-brand-tan hover:border-2 hover:border-brand-tan transition duration-500"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}

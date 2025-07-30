@@ -9,7 +9,9 @@
 
 @theme inline {
   /* Brand Colors */
-  --color-brand-black: #1A1D1A;
+  --color-brand-black: #363537; /* #464E47 */
+  --color-brand-tan: #CBC0AD;
+  --color-brand-tan-dark: #B1A68D;
   --color-brand-white: #FBF9FF;
   --color-brand-blush: #9F9AA4;
 

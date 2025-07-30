@@ -24,7 +24,7 @@ export default function CustomGallery() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <section className="py-12 px-6 lg:py-24 lg:pb-0" ref={ref}>
+    <section id="gallery" className="py-12 px-6 lg:py-24 lg:pb-0" ref={ref}>
       <motion.h2
         className="text-6xl md:text-8xl mb-16 font-antro text-center"
         style={{ y }}

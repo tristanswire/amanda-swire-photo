@@ -1,6 +1,6 @@
 // pages/index.tsx
 import Head from 'next/head';
-import Header from '@/components/Header';
+import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Gallery from '@/components/Gallery';
 import Pricing from '@/components/Pricing';
@@ -41,8 +41,8 @@ export default function Home() {
           }}
         />
       </Head>
-      <main className="font-serif text-center text-gray-700 bg-brand-white min-h-screen">
-        <Header />
+      <main className="bg-brand-white min-h-screen">
+        <Hero />
         <About />
         <Testimonial />
         <Gallery />
@@ -61,7 +61,7 @@ export default function Home() {
             href="https://www.instagram.com/amandaswire_photography"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand-black hover:text-[#C65B7C] transition"
+            className="text-brand-black hover:text-[#CBC0AD] transition"
             aria-label="Instagram"
           >
             <FaInstagram size={30} />
@@ -70,7 +70,7 @@ export default function Home() {
             href="https://www.facebook.com/amanda.erickson.108889"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-brand-black hover:text-[#C65B7C] transition"
+            className="text-brand-black hover:text-[#CBC0AD] transition"
             aria-label="Facebook"
           >
             <FaFacebook size={30} />
@@ -78,7 +78,6 @@ export default function Home() {
         </div>
         &copy; {new Date().getFullYear()} Amanda Swire Photography. All rights reserved.
       </motion.footer>
-    );
     </>
   );
 }
