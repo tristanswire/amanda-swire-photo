@@ -24,9 +24,9 @@ export default function CustomGallery() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
-    <section id="gallery" className="py-24 pb-6 lg:py-24 lg:pb-0" ref={ref}>
+    <section id="gallery" className="py-24 pb-6 lg:py-24 lg:pb-0 max-w-[90%] mx-auto lg:max-w-[95%]" ref={ref}>
       <motion.h2
-        className="text-6xl md:text-8xl mb-16 font-antro text-center"
+        className="text-6xl md:text-7xl mb-16 font-antro text-center"
         style={{ y }}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export default function CustomGallery() {
 
       <Gallery>
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -59,13 +59,14 @@ export default function CustomGallery() {
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
+              className="max-w-[40rem] w-[100%] mx-auto"
             >
               <Item original={src} thumbnail={src} width={width} height={height}>
                 {({ ref, open }) => (
                   <div
                     ref={ref}
                     onClick={open}
-                    className="relative w-full h-100 sm:h-70 lg:h-120 overflow-hidden rounded-xl cursor-pointer"
+                    className="relative w-full h-140 sm:h-180 lg:h-140 overflow-hidden rounded-xl cursor-pointer"
                   >
                     <Image
                       src={src}

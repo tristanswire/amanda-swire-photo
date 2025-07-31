@@ -29,11 +29,11 @@ const packages = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-12 lg:py-24 px-6 text-center bg-brand-white overflow-hidden">
+    <section id="pricing" className="py-12 px-6 lg:py-24 lg:pb-12 text-center bg-brand-white overflow-hidden">
       <motion.h2
-        className="text-6xl md:text-8xl mb-16 font-antro text-brand-black"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        className="text-6xl md:text-7xl mb-16 font-antro text-brand-black"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
@@ -55,22 +55,19 @@ export default function Pricing() {
         {packages.map(({ title, price, description, image, alt }) => (
           <motion.div
             key={title}
-            className="w-[90%] max-w-[40rem] lg:w-[100%] mx-auto bg-brand-tan/10 text-brand-black rounded-xl hover:shadow-md transition p-6"
+            className="max-w-[40rem] w-[100%] mx-auto bg-brand-tan/10 text-brand-black rounded-xl p-6"
             variants={{
-              hidden: { opacity: 0, y: 40 },
-              visible: { opacity: 1, y: 0 },
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
             }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            <motion.div
-              className="relative w-full h-100 rounded-lg overflow-hidden mb-4"
-              transition={{ duration: 0.3 }}
-            >
+            <div className="relative w-full h-110 rounded-lg overflow-hidden mb-4">
               <Image src={image} alt={alt} fill className="object-cover" />
-            </motion.div>
+            </div>
             <h3 className="text-lg font-body">{title}</h3>
             <p className="text-6xl font-bold pb-2 mb-6">{price}</p>
-            <ul className="mt-2 text-lg space-y-1 pb-4 pl-3 font-body">
+            <ul className="mt-2 text-lg space-y-1 pb-8 pl-3 font-body">
               {description.map((item, i) => (
                 <li key={i}>• {item}</li>
               ))}
@@ -78,20 +75,20 @@ export default function Pricing() {
             <motion.a
               href="https://www.instagram.com/amandaswire_photography"
               target="_blank"
-              className="block lg:hidden my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-2xl text-xl rounded-lg hover:bg-brand-white hover:text-brand-tan hover:border-2 hover:border-brand-tan transition duration-500"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              className="block my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-2xl text-xl rounded-lg border-2 border-brand-tan hover:bg-brand-white hover:text-brand-tan-dark hover:border-brand-tan-dark"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              Book a Session
+              Book a {title}
             </motion.a>
           </motion.div>
         ))}
       </motion.div>
 
       <motion.p
-        className="mt-3 mb-10 text-sm text-brand-black italic"
+        className="mt-2 mb-4 text-xs text-brand-black/80 italic"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.6 }}
@@ -99,18 +96,7 @@ export default function Pricing() {
       >
         Travel fees may apply for locations outside the DFW area.
       </motion.p>
-
-      <motion.a
-        href="https://www.instagram.com/amandaswire_photography"
-        target="_blank"
-        className="hidden lg:block my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-sm mx-auto text-xl rounded-lg hover:bg-brand-white hover:text-brand-tan hover:border-2 hover:border-brand-tan transition duration-500"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        Book a Session
-      </motion.a>
     </section>
+
   );
 }

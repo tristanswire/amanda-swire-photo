@@ -28,7 +28,7 @@ export default function About() {
         warmth and light of your most meaningful moments.
       </motion.p>
 
-      <div className="flex justify-center gap-4 flex-wrap">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
         {[1, 2, 3].map((num, index) => (
           <motion.div
             key={num}
@@ -36,7 +36,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 + index * 0.2 }}
             viewport={{ once: true }}
-            className="w-100 h-100 relative rounded-xl overflow-hidden"
+            className="max-w-[40rem] w-[100%] h-160 lg:h-100 mx-auto relative rounded-xl overflow-hidden"
           >
             <Image
               src={`/images/amanda-${num}.jpg`}

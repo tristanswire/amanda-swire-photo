@@ -1,11 +1,12 @@
 // pages/index.tsx
 import Head from 'next/head';
+import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Gallery from '@/components/Gallery';
 import Pricing from '@/components/Pricing';
 import Testimonial from '@/components/Testimonial';
-import Faq from '@/components/Faq';
+// import Faq from '@/components/Faq';
 import { motion } from 'framer-motion';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 
@@ -42,21 +43,22 @@ export default function Home() {
         />
       </Head>
       <main className="bg-brand-white min-h-screen">
+        <Header />
         <Hero />
         <About />
         <Testimonial />
         <Gallery />
         <Pricing />
-        <Faq />
+        {/* <Faq /> */}
       </main>
       <motion.footer
-        className="py-8 text-sm text-brand-black text-center"
+        className="pb-8 text-sm text-brand-black text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <div className="flex justify-center gap-6 mb-4">
+        <div className="flex justify-center gap-6 pb-4 pt-8 border-t-1 border-brand-tan">
           <a
             href="https://www.instagram.com/amandaswire_photography"
             target="_blank"
