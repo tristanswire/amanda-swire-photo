@@ -21,6 +21,7 @@ const parisienne = Ms_Madi({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  
   const router = useRouter();
 
   useEffect(() => {
