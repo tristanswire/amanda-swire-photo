@@ -6,22 +6,40 @@ import { motion } from 'framer-motion';
 const packages = [
   {
     title: 'Mini Session',
-    price: '$200',
-    description: ['Up to 30 Minutes', 'Minimum 15 Photos', 'Digital Download', 'Advanced Retouching'],
+    price: '$275',
+    description: [
+      'Up to 30 minutes of photography at a location of your choice',
+      'Minimum 15 high-resolution edited images',
+      'Digital gallery for easy download and sharing',
+      'Advanced retouching on all selected images',
+      'Perfect for quick family updates, couples, or maternity'
+    ],
     image: '/images/pricing-1.jpg',
     alt: 'a female author blowing confetti in to the air'
   },
   {
     title: 'Full Session',
-    price: '$300',
-    description: ['Up to 60 Minutes', 'Minimum 25 Photos', 'Digital Download', 'Advanced Retouching'],
+    price: '$400',
+    description: [
+      'Up to 60 minutes at one or two nearby locations', 
+      'Minimum 25 high-resolution edited images', 
+      'Personalized online gallery with full download rights', 
+      'Advanced retouching and light styling guidance',
+      'Great for families, engagements, seniors, or maternity with outfit changes'
+    ],
     image: '/images/pricing-2.jpg',
     alt: 'black and white photo of a family of 6 laying on the sitting smiling together'
   },
   {
     title: 'Newborn Session',
-    price: '$350',
-    description: ['Up to 90 Minutes', 'Minimum 30 Photos', 'Digital Download', 'Advanced Retouching'],
+    price: '$500',
+    description: [
+      'Up to 90 minutes in-home or studio-style session',
+      'Minimum 30 high-resolution edited images',
+      'Includes family and sibling shots with gentle posing',
+      'Advanced newborn-safe retouching (skin, color, details)',
+      'A relaxed, baby-led experience with plenty of time for feeding and soothing'
+    ],
     image: '/images/pricing-3.jpg',
     alt: 'a beautiful newborn boy laying on his fathers forearm'
   },
@@ -41,7 +59,7 @@ export default function Pricing() {
       </motion.h2>
 
       <motion.div
-        className="grid gap-6 lg:grid-cols-3 max-w-7xl mx-auto text-left"
+        className="grid gap-6 lg:grid-cols-3 max-w-[90rem] mx-auto text-left"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -55,7 +73,7 @@ export default function Pricing() {
         {packages.map(({ title, price, description, image, alt }) => (
           <motion.div
             key={title}
-            className="max-w-[40rem] w-[100%] mx-auto bg-brand-tan/10 text-brand-black rounded-xl p-6"
+            className="relative max-w-[34rem] w-[100%] mx-auto bg-brand-tan/10 text-brand-black rounded-xl p-6 pb-24"
             variants={{
               hidden: { opacity: 0 },
               visible: { opacity: 1 },
@@ -65,7 +83,7 @@ export default function Pricing() {
             <div className="relative w-full h-110 rounded-lg overflow-hidden mb-4">
               <Image src={image} alt={alt} fill className="object-cover" />
             </div>
-            <h3 className="text-lg font-body">{title}</h3>
+            <h3 className="text-lg lg:text-xl font-body">{title}</h3>
             <p className="text-6xl font-bold pb-2 mb-6">{price}</p>
             <ul className="mt-2 text-lg space-y-1 pb-8 pl-3 font-body">
               {description.map((item, i) => (
@@ -75,7 +93,7 @@ export default function Pricing() {
             <motion.a
               href="https://www.instagram.com/amandaswire_photography"
               target="_blank"
-              className="block my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-2xl text-xl rounded-lg border-2 border-brand-tan hover:bg-brand-white hover:text-brand-tan-dark hover:border-brand-tan-dark"
+              className="absolute bottom-0 left-10 right-10 my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-2xl text-xl rounded-lg border-2 border-brand-tan hover:bg-brand-white hover:text-brand-tan-dark hover:border-brand-tan-dark"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
