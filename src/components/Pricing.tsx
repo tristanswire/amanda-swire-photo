@@ -93,7 +93,7 @@ export default function Pricing() {
             <motion.a
               href="https://www.instagram.com/amandaswire_photography"
               target="_blank"
-              className="absolute bottom-0 left-10 right-10 my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-2xl text-xl rounded-lg border-2 border-brand-tan hover:bg-brand-white hover:text-brand-tan-dark hover:border-brand-tan-dark"
+              className="absolute duration-350 transition bottom-0 left-10 right-10 my-6 bg-brand-tan text-brand-white px-12 py-4 text-center max-w-2xl text-xl rounded-lg border-2 border-brand-tan-dark hover:bg-brand-white hover:text-brand-tan-dark hover:border-brand-tan-dark"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}

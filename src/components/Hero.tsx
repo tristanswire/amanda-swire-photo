@@ -38,7 +38,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
             href="#pricing"
-            className="inline-block text-lg md:text-xl border-2 border-brand-white bg-brand-white text-brand-tan-dark px-8 py-4 md:px-10 rounded-md hover:opacity-90 font-body hover:border-brand-tan-dark hover:bg-brand-tan-dark hover:text-brand-white"
+            className="inline-block text-lg md:text-xl border-2 duration-350 transition border-brand-white bg-brand-white text-brand-tan-dark px-8 py-4 md:px-10 rounded-md hover:opacity-90 font-body hover:border-brand-tan-dark hover:bg-brand-tan-dark hover:text-brand-white"
           >
             Book a Session
           </motion.a>
