@@ -24,7 +24,6 @@ export default function Hero() {
             <li><a href="#testimonials" className="hover:text-brand-tan-dark duration-350 transition-all">Testimonials</a></li>
             <li><a href="#gallery" className="hover:text-brand-tan-dark duration-350 transition-all">Gallery</a></li>
             <li><a href="#pricing" className="hover:text-brand-tan-dark duration-350 transition-all">Pricing</a></li>
-            {/* <li><a href="#faq" className="hover:text-brand-tan-dark duration-350 transition-all">Questions</a></li> */}
           </ul>
           <button
             onClick={() => setIsOpen(true)}
