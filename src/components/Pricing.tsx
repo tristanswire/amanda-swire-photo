@@ -80,8 +80,8 @@ export default function Pricing() {
             }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            <div className="relative w-full h-110 rounded-lg overflow-hidden mb-4">
-              <Image src={image} alt={alt} fill className="object-cover" />
+            <div className="relative w-full h-140 rounded-lg overflow-hidden mb-4">
+              <Image src={image} alt={alt} fill className="object-cover object-top" />
             </div>
             <h3 className="text-lg lg:text-xl font-body">{title}</h3>
             <p className="text-6xl font-bold pb-2 mb-6">{price}</p>
